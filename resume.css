@@ -1,0 +1,280 @@
+/* Fonts */
+
+@font-face { /*  Royalty free commercial use font attribution https://fontesk.com/bestermind-font/ */
+	font-family: 'Bestermind';
+	src: url('fonts/Bestermind.ttf');
+	font-style: normal;
+}
+
+/* Header and Footer */
+
+footer {
+    font-family: 'Bestermind', fantasy;
+    text-align: center;
+    letter-spacing: 5px;
+	font-weight: 900;
+	font-size: 22px;
+	bottom: 0%;
+	color: #EB7D5B;
+	margin: 0 auto;
+	padding: 30px 30px 30px 30px;
+}
+
+header {
+	top: 0%;
+	margin: 50px auto 50px auto;
+    text-align: center;
+}
+
+hr {
+    margin: 50px 0px 0px 50px;
+    margin: 0 auto;
+    border-width: 3px;
+    border-image-slice: 1;    
+    border-image-source: linear-gradient(to left, #EB7D5B, #EBE367, #AB8AEB, #73EBCB);
+}
+
+/* Whole page */
+
+* { /* Include margin and padding as width and height percentage */
+	box-sizing: border-box;
+}
+
+body {
+    background: #1c2724;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-padding: 1rem 0 0 0;
+    font-size: 18px;
+}
+
+section {
+    text-align: left;
+    color: white;
+    padding: 50px 20px 50px 20px;
+    margin: 50px 50px 50px 50px;
+    border: 10px solid;
+    border-width: 5px;
+    border-image-slice: 1;    
+    border-image-source: linear-gradient(to left, #73EBCB, #AB8AEB, #EBE367, #EB7D5B);
+}
+
+a {
+    color:white;
+    font-style: italic;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Bestermind', fantasy;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 100;
+	font-size: 40px;
+	color: #EB7D5B;
+	padding: 30px 30px 30px 30px;
+    text-wrap: balance;
+}
+
+h2 {
+    font-family: 'Bestermind', fantasy;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+    text-wrap: balance;
+}
+
+h3 {
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+    text-wrap: balance;
+}
+
+p {
+    padding: 5px 5px 5px 5px;
+}
+
+p img {
+    display: block;
+    max-height: 150px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+li {
+    padding: 15px 0px 15px 0px;
+}
+
+.hide {
+    padding: 15px 0px 15px 0px;
+    list-style-type: none;
+}
+
+.green {
+    color: #73EBCB;
+    text-align: center;
+}
+
+.spacing {
+    word-spacing: 8px;
+    text-align: center;
+}
+
+.purple {
+    color: #AB8AEB;
+    text-align: center;
+}
+
+.yellow {
+    color: #EBE367;
+    text-align: center;
+}
+
+.orange {
+    color: #EB7D5B;
+    text-align: center;
+}
+
+.units {
+    font-weight: bold;
+    color: #EB7D5B;
+}
+
+/* Accordion */
+
+details {
+	background-color: RGBA(171, 138, 235, 0,5);
+	margin-bottom: 15px;
+    width: 800px;
+}
+
+summary {
+    background-color: RGBA(235, 125, 91, 0.8);
+    padding: 10px 10px 10px 10px;
+}
+
+details > summary {
+	cursor: pointer;
+}
+
+.backorange > summary {
+    filter: drop-shadow(5px 5px 0px #1a1a1a);
+    background-color: #EB7D5B;
+    color: black;    
+}
+
+.backgradientleft > summary {
+    background-image: linear-gradient(to top left, #EB7D5B, #EBE367);
+    filter: drop-shadow(5px 5px 0px #1a1a1a);
+    color: black;
+}
+
+.backgradientright > summary {
+    background-image: linear-gradient(to top right, #AB8AEB, #73EBCB);
+    filter: drop-shadow(5px 5px 0px #1a1a1a);
+    color: black;
+}
+
+.backpurple > summary {
+    background-color: #AB8AEB;
+    filter: drop-shadow(5px 5px 0px #1a1a1a);
+    color: black;
+}
+
+.backgreen > summary {
+    background-color: #73EBCB;
+    filter: drop-shadow(5px 5px 0px #1a1a1a);
+    color: black;
+}
+
+.backyellow > summary {
+    background-color: #EBE367;
+    filter: drop-shadow(5px 5px 0px #1a1a1a);
+    color: black;
+}
+
+/* Slideshow */
+
+.banner, .banner img {
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap; /* Makes no space between them */
+	width: 200px;
+	height: 100px;
+	box-shadow: 3px 3px 5px #6B5E38;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	border-radius: 25px;
+	margin: 0 auto;
+	padding: 0px 0px 6px 0px;
+	background: conic-gradient(from 0deg, #EB7D5B 0deg, #EBE367 35deg, #73EBCB 60deg, #AB8AEB 85deg, #73EBCB 110deg, #EBE367 135deg, #EB7D5B 160deg, #EB7D5B 185deg, #EBE367 210deg, #73EBCB 235deg, #AB8AEB 260deg, #73EBCB 285deg, #EBE367 310deg, #EB7D5B 335deg);
+}
+
+.banner > div {
+    display: inline-block;
+	animation: slide 30s forwards 3s infinite;
+    -o-transition: slide 30s forwards 3s infinite;
+    -ms-transition: slide 30s forwards 3s infinite;
+    -moz-transition: slide 30s forwards 3s infinite;
+    -webkit-transition: slide 30s forwards 3s infinite;
+}
+
+@keyframes slide {
+	0% { transform: translateX(0); } /* Tip Toe Soles */
+	17% { transform: translateX(-202px); } /* Sorrento by the Sea */
+   	33% { transform: translateX(-406px); } /* Special Cakes for all Occassions */
+	50% { transform: translateX(-610px); } /* Midjourney Portfolio */
+	66% { transform: translateX(-815px); } /* ENTP Zone */
+	83% { transform: translateX(-1020px); } /* Big 5 */
+	100% { transform: translateX(0); } /* Tip Toe Soles */
+}
+
+/* Printing */
+
+@page {
+	size: A4;
+	margin: 0;
+}
+
+@media print {
+	html, body {
+		width: 210mm;
+		height: 297mm;
+}}
+
+/* Mobile page */
+
+@media only screen and (max-width: 800px) {
+    
+    h2 {
+        font-size: calc(12px + 1vw);
+    }
+
+    header {
+        width: 80%;
+    }
+    
+    footer {
+        width: 80%;
+    }
+
+    section {
+        font-size: calc(12px + 1vw);
+        max-width: 90vw;
+    }
+
+    summary, details, .backorange, .backgradientleft, .backgradientright, .backpurple, .backgreen, .backyellow {
+        font-size: calc(12px + 1vw);
+        max-width: 70vw;
+    }
+}
